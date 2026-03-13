@@ -1,0 +1,18 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.main {
+    background: url("assets/images/mainimg.jpg") no-repeat center center/cover;
+}
+
+.pricing {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("assets/images/Group122.png") no-repeat center center/cover;
+}
+
+#stroke {
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
