@@ -15,27 +15,35 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="preload" as="image" href="assets/images/hero.webp">
+    <link rel="preload" as="image" href="assets/images/pricing-bg.webp">
 </head>
 
-<body class="bg-white">
+<body class="bg-white loading">
 
+    <div id="loader">
+        <div class="loader-content">
+            <h1 class="brand">Забор Строй</h1>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
 
-    <section class="main w-full md:h-screen relative h-190" id="home">
-        <div class="absolute top-0 bg-black/60 w-full md:h-screen h-190">
+    <section class="main w-full md:h-screen relative h-170" id="home">
+        <div class="absolute top-0 bg-black/60 w-full md:h-screen h-170">
             <div class="flex justify-center items-center h-full flex-col gap-5 px-6">
 
-                <h1 class="font-semibold text-4xl text-white/80">Build Strong, Secure & Beautiful Fences</h1>
-                <p class="font-semibold text-white/80 md:max-w-2xl md:px-5 text-justify">Professional fence installation
-                    and
-                    cost estimation. Use our smart calculator to plan your project
-                    and get an instant estimate. From residential fences to large commercial projects, we design and
-                    build durable fencing solutions that last for years.</p>
-                <a href="#services" class="bg-[#000035] text-white px-10 py-2">View
-                    Services</a>
+                <h1 class="font-semibold text-4xl text-white/80">Стройте прочные, надежные и красивые заборы.</h1>
+                <p class="font-semibold text-white/80 md:max-w-2xl md:px-5 text-justify">Профессиональная установка
+                    заборов и оценка стоимости. Воспользуйтесь нашим интеллектуальным калькулятором, чтобы спланировать
+                    свой проект и получить мгновенную смету. От заборов для частных домов до крупных коммерческих
+                    проектов, мы проектируем и строим долговечные ограждения, которые прослужат долгие годы.</p>
+                <a href="#services" class="bg-[#000035] text-white px-10 py-2">Просмотр услуг</a>
             </div>
         </div>
         <div
-            class="fixed z-20 bg-[#000035] text-white bottom-10 right-10 flex flex-col text-2xl px-2 py-2 rounded-xl gap-6 shadow-md shadow-white/30">
+            class="fixed z-20 bg-[#000035] text-white bottom-5 right-5 flex flex-col text-2xl px-2 py-2 rounded-xl gap-6 shadow-md shadow-white/30">
             <i class="ri-whatsapp-line  cursor-pointer"></i>
             <a href="https://t.me/masterovit_zabory?start=roistat_19879817" target="_blank">
                 <i class="ri-telegram-line cursor-pointer "></i>
@@ -48,21 +56,22 @@
         <nav class="w-full z-50 fixed top-0">
             <div class="mx-auto flex justify-between items-center px-6 py-4">
                 <a href="#"
-                    class="text-xl font-bold bg-[#000035] backdrop-blur-xs text-white px-6 py-2 rounded-full">FencePro</a>
+                    class="text-xl font-bold bg-[#000035] backdrop-blur-xs text-white px-6 py-2 rounded-full">Забор
+                    Строй</a>
 
                 <ul
                     class="hidden md:flex gap-8 font-medium bg-[#000035] text-white backdrop-blur-lg px-6 py-2.5 rounded-full">
-                    <li><a href="#home" class="hover:text-yellow-500">Home</a></li>
-                    <li><a href="#about" class="hover:text-yellow-500">About</a></li>
-                    <li><a href="#services" class="hover:text-yellow-500">Services</a></li>
-                    <li><a href="#price" class="hover:text-yellow-500">Pricing</a></li>
-                    <li><a href="#calculator" class="hover:text-yellow-500">Calculator</a></li>
-                    <li><a href="#contact" class="hover:text-yellow-500">Contact</a></li>
+                    <li><a href="#home" class="hover:text-yellow-500">Главная</a></li>
+                    <li><a href="#about" class="hover:text-yellow-500">О Компаний</a></li>
+                    <li><a href="#services" class="hover:text-yellow-500">Услуги </a></li>
+                    <li><a href="#price" class="hover:text-yellow-500">Цены</a></li>
+                    <li><a href="#calculator" class="hover:text-yellow-500">Калкулятор</a></li>
+                    <li><a href="#contact" class="hover:text-yellow-500">Контакты</a></li>
                 </ul>
 
                 <div class="hidden md:flex gap-4 items-center">
                     <a href="#contact" class="bg-[#000035] text-white px-5 py-2 rounded-full cursor-pointer">
-                        Book a Manager
+                        Оставить Заявку
                     </a>
                 </div>
 
@@ -79,15 +88,15 @@
 
             <ul class="flex flex-col px-14 my-20 py-6 gap-6 font-medium text-lg">
 
-                <li><a href="#home" class="mobile-link">Home</a></li>
-                <li><a href="#about" class="mobile-link">About</a></li>
-                <li><a href="#services" class="mobile-link">Services</a></li>
-                <li><a href="#price" class="mobile-link">Pricing</a></li>
-                <li><a href="#calculator" class="mobile-link">Calculator</a></li>
-                <li><a href="#contact" class="mobile-link">Contact</a></li>
+                <li><a href="#home" class="mobile-link">Главная</a></li>
+                <li><a href="#about" class="mobile-link">О Компаний</a></li>
+                <li><a href="#services" class="mobile-link">Услуги </a></li>
+                <li><a href="#price" class="mobile-link">Цены</a></li>
+                <li><a href="#calculator" class="mobile-link">Калкулятор</a></li>
+                <li><a href="#contact" class="mobile-link">Контакты</a></li>
 
-                <a href="#contact" class="bg-[#000035] text-white px-6 py-2 rounded-lg mt-4">
-                    Book a Manager
+                <a href="#contact" class="bg-[#000035] text-white px-6 py-2 text-center rounded-lg mt-4">
+                    Оставить Заявку
                 </a>
 
             </ul>
@@ -101,35 +110,37 @@
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
 
             <div class="flex flex-col justify-end">
-                <h1 class="text-xl font-semibold mb-2">Who We Are?</h1>
+                <h1 class="text-xl font-semibold mb-2">Кто мы?</h1>
                 <p class="text-sm md:text-justify">
-                    We are a dedicated team of fencing professionals committed to delivering high-quality and durable
-                    fencing solutions. With years of experience in construction and design, we help homeowners and
-                    businesses secure their properties with fences that are both strong and visually appealing. Our goal
-                    is to combine craftsmanship, modern tools, and reliable materials to create fences that last.
+                    Мы — команда профессионалов в области ограждений, стремящаяся предоставлять высококачественные и
+                    долговечные решения. Благодаря многолетнему опыту в строительстве и проектировании, мы помогаем
+                    домовладельцам и предприятиям защитить свою собственность с помощью заборов, которые одновременно
+                    прочны и эстетически привлекательны. Наша цель — сочетать мастерство, современные инструменты и
+                    надежные материалы для создания заборов, которые прослужат долгие годы.
                 </p>
             </div>
 
             <div class="flex justify-center md:justify-center">
                 <img src="assets/images/aboutimg.avif" class="w-full max-w-md md:h-130 object-cover rounded-xl"
-                    alt="About Image">
+                    alt="О Компаний Image">
             </div>
 
             <div class="flex flex-col justify-end space-y-6">
                 <div>
-                    <h1 class="text-xl font-semibold mb-2">Our Mission</h1>
+                    <h1 class="text-xl font-semibold mb-2">Наша миссия</h1>
                     <p class="text-sm md:text-justify">
-                        Our mission is to provide reliable, affordable solutions that meet the needs of every customer.
-                        We strive to simplify the fence planning process by offering smart tools like our fence
-                        calculator, transparent pricing, and professional installation services.
+                        Наша миссия — предоставлять надежные и доступные решения, отвечающие потребностям каждого
+                        клиента. Мы стремимся упростить процесс планирования забора, предлагая удобные инструменты,
+                        такие как наш калькулятор забора, прозрачное ценообразование и профессиональные услуги по
+                        установке.
                     </p>
                 </div>
                 <div>
-                    <h1 class="text-xl font-semibold mb-2">Our Vision</h1>
+                    <h1 class="text-xl font-semibold mb-2">Наше видение</h1>
                     <p class="text-sm md:text-justify">
-                        Our vision is to become a trusted leader in the fencing industry by delivering innovative
-                        solutions, exceptional service, and long-lasting results. We aim to make planning and building
-                        fences easier, smarter, and more accessible for everyone.
+                        Наша цель — стать надежным лидером в индустрии ограждений, предлагая инновационные решения,
+                        исключительный сервис и долгосрочные результаты. Мы стремимся сделать планирование и
+                        строительство заборов проще, эффективнее и доступнее для всех.
                     </p>
                 </div>
             </div>
@@ -139,108 +150,116 @@
 
 
     <!-- gallery -->
-    <section class="py-10">
+    <section class="py-12 bg-white" id="gallery">
 
-        <div class="max-w-7xl mx-auto px-6" id="gallery">
+        <div class="max-w-7xl mx-auto px-6">
 
-            <h2 class="text-3xl font-bold text-center mb-12">Project Gallery</h2>
+            <h2 class="text-3xl font-bold text-center mb-12">Галерея проектов</h2>
 
-            <div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-6">
+            <!-- GRID -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
 
-                <div class="mb-6 break-inside-avoid overflow-hidden shadow-lg/30 rounded-xl">
-                    <img src="assets/images/one.jpeg" class="rounded-xl w-full hover:scale-110 transition duration-300">
+                <!-- ITEM -->
+                <div class="overflow-hidden rounded-xl shadow-lg group">
+                    <img src="assets/images/one.jpeg"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
                 </div>
 
-                <div class="mb-6 break-inside-avoid overflow-hidden shadow-lg/30 rounded-xl">
-                    <img src="assets/images/two.jpeg" class="rounded-xl w-full hover:scale-110 transition duration-300">
+                <div class="overflow-hidden rounded-xl shadow-lg group">
+                    <img src="assets/images/two.jpeg"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
                 </div>
 
-                <div class="mb-6 break-inside-avoid overflow-hidden shadow-lg/30 rounded-xl">
+                <div class="overflow-hidden rounded-xl shadow-lg group">
                     <img src="assets/images/three.jpeg"
-                        class="rounded-xl w-full hover:scale-110 transition duration-300">
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
                 </div>
 
-                <div class="mb-6 break-inside-avoid overflow-hidden shadow-lg/30 rounded-xl">
+                <div class="overflow-hidden rounded-xl shadow-lg group">
                     <img src="assets/images/four.jpeg"
-                        class="rounded-xl w-full hover:scale-110 transition duration-300">
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
                 </div>
 
-                <div class="mb-6 break-inside-avoid overflow-hidden shadow-lg/30 rounded-xl">
+                <div class="overflow-hidden rounded-xl shadow-lg group">
                     <img src="assets/images/five.jpeg"
-                        class="rounded-xl w-full hover:scale-110 transition duration-300">
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
                 </div>
 
-                <div class="mb-6 break-inside-avoid overflow-hidden shadow-lg/30 rounded-xl">
-                    <img src="assets/images/six.jpeg" class="rounded-xl w-full hover:scale-110 transition duration-300">
+                <div class="overflow-hidden rounded-xl shadow-lg group">
+                    <img src="assets/images/six.jpeg"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
                 </div>
 
-                <div class="mb-6 break-inside-avoid overflow-hidden shadow-lg/30 rounded-xl">
+                <div class="overflow-hidden rounded-xl shadow-lg group">
                     <img src="assets/images/seven.jpeg"
-                        class="rounded-xl w-full hover:scale-110 transition duration-300">
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
                 </div>
 
-                <div class="mb-6 break-inside-avoid overflow-hidden shadow-lg/30 rounded-xl">
+                <div class="overflow-hidden rounded-xl shadow-lg group">
                     <img src="assets/images/eight.jpeg"
-                        class="rounded-xl w-full hover:scale-110 transition duration-300">
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
                 </div>
 
-                <div class="mb-6 break-inside-avoid overflow-hidden shadow-lg/30 rounded-xl">
+                <div class="overflow-hidden rounded-xl shadow-lg group">
                     <img src="assets/images/nine.jpeg"
-                        class="rounded-xl w-full hover:scale-110 transition duration-300">
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
                 </div>
 
-                <div class="mb-6 break-inside-avoid overflow-hidden shadow-lg/30 rounded-xl">
-                    <img src="assets/images/ten.jpeg" class="rounded-xl w-full hover:scale-110 transition duration-300">
+                <div class="overflow-hidden rounded-xl shadow-lg group">
+                    <img src="assets/images/ten.jpeg"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
                 </div>
 
-                <div class="mb-6 break-inside-avoid overflow-hidden md:block hidden shadow-lg/30 rounded-xl">
+                <!-- EXTRA 10 IMAGES -->
+
+                <div class="overflow-hidden rounded-xl shadow-lg group">
                     <img src="assets/images/eleven.jpeg"
-                        class="rounded-xl w-full hover:scale-110 transition duration-300">
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
                 </div>
 
-                <div class="mb-6 break-inside-avoid overflow-hidden md:block hidden shadow-lg/30 rounded-xl">
+                <div class="overflow-hidden rounded-xl shadow-lg group">
                     <img src="assets/images/twelve.jpeg"
-                        class="rounded-xl w-full hover:scale-110 transition duration-300">
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
                 </div>
 
-                <div class="mb-6 break-inside-avoid overflow-hidden md:block hidden shadow-lg/30 rounded-xl">
+                <div class="overflow-hidden rounded-xl shadow-lg group">
                     <img src="assets/images/thirteen.jpeg"
-                        class="rounded-xl w-full hover:scale-110 transition duration-300">
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
                 </div>
 
-                <div class="mb-6 break-inside-avoid overflow-hidden md:block hidden shadow-lg/30 rounded-xl">
+                <div class="overflow-hidden rounded-xl shadow-lg group">
                     <img src="assets/images/fourteen.jpeg"
-                        class="rounded-xl w-full hover:scale-110 transition duration-300">
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
                 </div>
 
-                <div class="mb-6 break-inside-avoid overflow-hidden md:block hidden shadow-lg/30 rounded-xl">
+                <div class="overflow-hidden rounded-xl shadow-lg group">
                     <img src="assets/images/fifteen.jpeg"
-                        class="rounded-xl w-full hover:scale-110 transition duration-300">
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
                 </div>
 
-                <div class="mb-6 break-inside-avoid overflow-hidden md:block hidden shadow-lg/30 rounded-xl">
+                <div class="overflow-hidden rounded-xl shadow-lg group">
                     <img src="assets/images/sixteen.jpeg"
-                        class="rounded-xl w-full hover:scale-110 transition duration-300">
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
                 </div>
 
-                <div class="mb-6 break-inside-avoid overflow-hidden md:block hidden shadow-lg/30 rounded-xl">
+                <div class="overflow-hidden rounded-xl shadow-lg group">
                     <img src="assets/images/seventeen.jpeg"
-                        class="rounded-xl w-full hover:scale-110 transition duration-300">
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
                 </div>
 
-                <div class="mb-6 break-inside-avoid overflow-hidden md:block hidden shadow-lg/30 rounded-xl">
+                <div class="overflow-hidden rounded-xl shadow-lg group">
                     <img src="assets/images/eighteen.jpeg"
-                        class="rounded-xl w-full hover:scale-110 transition duration-300">
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
                 </div>
 
-                <div class="mb-6 break-inside-avoid overflow-hidden md:block hidden shadow-lg/30 rounded-xl">
+                <div class="overflow-hidden rounded-xl shadow-lg group">
                     <img src="assets/images/nighteen.jpeg"
-                        class="rounded-xl w-full hover:scale-110 transition duration-300">
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
                 </div>
 
-                <div class="mb-6 break-inside-avoid overflow-hidden md:block hidden shadow-lg/30 rounded-xl">
+                <div class="overflow-hidden rounded-xl shadow-lg group">
                     <img src="assets/images/twenty.jpeg"
-                        class="rounded-xl w-full hover:scale-110 transition duration-300">
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
                 </div>
 
             </div>
@@ -251,8 +270,8 @@
 
     <!-- services -->
     <div class="text-center my-10 px-6" id="services">
-        <h1 class="text-4xl font-semibold mb-2">Services</h1>
-        <p>Select a fence type to view detailed specifications and advantages.</p>
+        <h1 class="text-4xl font-semibold mb-2">Услуги</h1>
+        <p>Выберите тип забора, чтобы просмотреть подробные характеристики и преимущества.</p>
     </div>
 
     <section class="py-10 px-6">
@@ -268,7 +287,7 @@
                             class="bg-black/35 h-full w-full absolute top-0 rounded-xl flex items-end py-4 px-3 text-center">
                             <h3
                                 class="font-semibold text-white group-hover:bg-yellow-500 group-hover:text-white transition w-full duration-300 bg-[#000035] px-3 py-2 rounded-xl">
-                                Wooden Fence</h3>
+                                Монтаж навесов</h3>
                         </div>
                     </div>
                 </div>
@@ -280,7 +299,7 @@
                             class="bg-black/35 h-full w-full absolute top-0 rounded-xl flex items-end py-4 px-3 text-center">
                             <h3
                                 class="font-semibold text-white group-hover:bg-yellow-500 group-hover:text-white transition w-full duration-300 bg-[#000035] px-3 py-2 rounded-xl">
-                                Metal Fence</h3>
+                                Забор из металлического штакетника</h3>
                         </div>
                     </div>
                 </div>
@@ -291,7 +310,7 @@
                             class="bg-black/35 h-full w-full absolute top-0 rounded-xl flex items-end py-4 px-3 text-center">
                             <h3
                                 class="font-semibold text-white group-hover:bg-yellow-500 group-hover:text-white transition w-full duration-300 bg-[#000035] px-3 py-2 rounded-xl">
-                                Vinyl Fence</h3>
+                                Забор из проф-листа</h3>
                         </div>
                     </div>
                 </div>
@@ -302,7 +321,7 @@
                             class="bg-black/35 h-full w-full absolute top-0 rounded-xl flex items-end py-4 px-3 text-center">
                             <h3
                                 class="font-semibold text-white group-hover:bg-yellow-500 group-hover:text-white transition w-full duration-300 bg-[#000035] px-3 py-2 rounded-xl">
-                                Chain Link Fence</h3>
+                                Забор Жалюзи</h3>
                         </div>
                     </div>
                 </div>
@@ -313,7 +332,7 @@
                             class="bg-black/35 h-full w-full absolute top-0 rounded-xl flex items-end py-4 px-3 text-center">
                             <h3
                                 class="font-semibold text-white group-hover:bg-yellow-500 group-hover:text-white transition w-full duration-300 bg-[#000035] px-3 py-2 rounded-xl">
-                                Automatic Gate</h3>
+                                автоматических откатных ворот, распашные ворота</h3>
                         </div>
                     </div>
                 </div>
@@ -324,7 +343,7 @@
                             class="bg-black/35 h-full w-full absolute top-0 rounded-xl flex items-end py-4 px-3 text-center">
                             <h3
                                 class="font-semibold text-white group-hover:bg-yellow-500 group-hover:text-white transition w-full duration-300 bg-[#000035] px-3 py-2 rounded-xl">
-                                Fence Repair</h3>
+                                Mонолитные работы, Кирпичная кладка</h3>
                         </div>
                     </div>
                 </div>
@@ -343,19 +362,19 @@
 
             <h1 class="text-4xl md:text-5xl font-bold mb-6">
                 <span id="stroke">
-                    Fence Pricing
+                    изгородь Цены
                 </span>
             </h1>
 
             <p class="mb-12 px-6">
-                We believe in clear and transparent pricing. Download our detailed price list to explore fencing
-                options, materials, and installation costs for your project.
+                Мы придерживаемся принципов прозрачного ценообразования. Скачайте наш подробный прайс-лист, чтобы
+                ознакомиться с вариантами ограждений, материалами и стоимостью установки для вашего проекта.
             </p>
 
         </div>
 
 
-        <!-- Pricing Card -->
+        <!-- Цены Card -->
 
         <div class=" px-6">
 
@@ -366,30 +385,31 @@
                 <div>
 
                     <h2 class="text-2xl font-semibold mb-4">
-                        Fence Pricing Guide
+                        изгородь Цены гид
                     </h2>
 
                     <p class="mb-6">
-                        Our pricing presentation includes detailed information about fence types, material costs,
-                        installation pricing, and project examples. Download the file to see complete pricing details.
+                        В нашей презентации с ценами содержится подробная информация о типах ограждений, стоимости
+                        материалов, ценах на установку и примеры проектов. Скачайте файл, чтобы ознакомиться с полными
+                        ценами.
                     </p>
 
                     <ul class="space-y-3 ">
 
                         <li class="flex items-center gap-2">
-                            Detailed fence material pricing
+                            Подробные цены на материалы для забора
                         </li>
 
                         <li class="flex items-center gap-2">
-                            Installation cost breakdown
+                            Разбивка стоимости установки
                         </li>
 
                         <li class="flex items-center gap-2">
-                            Project examples
+                            Примеры проектов
                         </li>
 
                         <li class="flex items-center gap-2">
-                            Transparent pricing structure
+                            Прозрачная структура ценообразования
                         </li>
 
                     </ul>
@@ -404,22 +424,22 @@
                     <div class="bg-[rgba(255,255,255,0.2)] backdrop-blur-lg rounded-xl p-8">
 
                         <h3 class="text-xl font-semibold mb-3">
-                            Download Price List
+                            Скачать прайс-лист
                         </h3>
 
                         <p class="mb-6 text-sm">
-                            Get the full pricing presentation in PowerPoint format.
+                            Получите полную презентацию о ценах в формате PowerPoint.
                         </p>
 
                         <a href="assets/files/Prays-list-ot-02_03_2026-sayt.xlsx" download
                             class="inline-block bg-[#000035] text-white font-semibold px-8 py-3 rounded-lg transition">
 
-                            Download Pricing
+                            Цены на скачивание
 
                         </a>
 
                         <p class="text-xs text-white mt-3">
-                            File format: .PPTX
+                            Формат файла: .PPTX
                         </p>
 
                     </div>
@@ -443,33 +463,40 @@
                 <form action="">
                     <div class="mt-4">
                         <input type="text" name="" id="name" class="border py-2 px-4 rounded-md w-[100%]"
-                            placeholder="Your Name">
+                            placeholder=" Ваше имя*">
                     </div>
                     <div class="mt-4">
                         <input type="email" name="" id="email" class="border py-2 px-4 rounded-md w-[100%]"
-                            placeholder="Email">
+                            placeholder="Ваш телефон*">
                     </div>
                     <div class="mt-4">
                         <input type="text" name="" id="loc" class="border py-2 px-4 rounded-md w-[100%]"
-                            placeholder="Your Location">
+                            placeholder="Ваше местоположение">
                     </div>
                     <div class="mt-4">
-                        <textarea name="" placeholder="How can we Help?" class="border py-2 px-4 rounded-md w-[100%]"
-                            id="msg" rows="5"></textarea>
+                        <input type="checkbox" name="" id="checkboxone" class="pt-2">
+                        <label for="checkboxone" class="text-sm">Нажав кнопку, я даю согласие на обработку медицинских
+                            данных и ознакомлен с Политикой ОПД.</label>
+                    </div>
+                    <div class="mt-4">
+                        <input type="checkbox" name="" id="checkboxtwo" class="pt-2">
+                        <label for="checkboxtwo" class="text-sm">Нажав кнопку, я даю согласие на получение
+                            информационных рассылок.</label>
                     </div>
                     <div class="flex flex-col md:flex-row gap-10 md:items-center mt-4">
                         <button id="button" type="submit"
-                            class="bg-[#000035] text-white px-5 py-2 rounded-sm cursor-pointer">GET IN TOUCH</button>
+                            class="bg-[#000035] text-white px-5 py-2 rounded-sm cursor-pointer">СВЯЖИТЕСЬ С
+                            НАМИ</button>
                     </div>
                 </form>
 
             </div>
         </div>
         <div>
-            <h1 class="text-4xl font-bold">lets <span id="stroke">talk</span> for <br>Something Special</h1>
-            <p class="my-5">I seek to push the limits of creativity to create high-engaging, user-friendly, and
-                memorable interactive
-                experiences.</p>
+            <h1 class="text-4xl font-bold">Давайте поговорим о
+                чём-то особенном.</h1>
+            <p class="my-5">Я стремлюсь расширить границы творчества, чтобы создавать увлекательные, удобные для
+                пользователя и запоминающиеся интерактивные проекты.</p>
             <a href="" class="text-xl font-bold">Youremail@gmail.com</a><br>
             <a href="" class="text-xl font-bold">1234567890</a>
         </div>
@@ -490,13 +517,15 @@
         <div class="bg-white h-[80%] overflow-y-scroll p-6 rounded-xl max-w-4xl w-full relative">
 
             <div class="flex justify-between items-center sticky z-20 top-0">
-                <h2 class="text-2xl font-bold mb-3 bg-[#000035] text-white py-2 px-4 rounded-lg">Wooden Fence</h2>
-                <button onclick="closeModal('modal1')" class="text-2xl cursor-pointer bg-[#000035] text-white rounded-full w-8 h-8 flex items-center justify-center"><i class="ri-close-line"></i></button>
+                <h2 class="text-2xl font-bold mb-3 bg-[#000035] text-white py-2 px-4 rounded-lg">Монтаж навесов</h2>
+                <button onclick="closeModal('modal1')"
+                    class="text-2xl cursor-pointer bg-[#000035] text-white rounded-full w-8 h-8 flex items-center justify-center"><i
+                        class="ri-close-line"></i></button>
             </div>
 
             <img src="assets/images/one.jpeg" class="rounded-xl shadow-lg/30" alt="">
             <p class="py-4">
-                Durable and stylish wooden fences that provide privacy and enhance the natural look of your property.
+                Durable and stylish Монтаж навесовs that provide privacy and enhance the natural look of your property.
             </p>
             <h2 class="text-2xl font-bold mb-3">Prices</h2>
             <div class="w-full overflow-x-auto mt-6">
@@ -594,8 +623,11 @@
         <div class="bg-white h-[80%] overflow-y-scroll p-6 rounded-xl max-w-4xl w-full relative">
 
             <div class="flex justify-between items-center sticky z-20 top-0">
-                <h2 class="text-2xl font-bold mb-3 bg-[#000035] text-white py-2 px-4 rounded-lg">Metal Fence</h2>
-                <button onclick="closeModal('modal2')" class="text-2xl cursor-pointer bg-[#000035] text-white rounded-full w-8 h-8 flex items-center justify-center"><i class="ri-close-line"></i></button>
+                <h2 class="text-2xl font-bold mb-3 bg-[#000035] text-white py-2 px-4 rounded-lg">Забор из металлического
+                    штакетника</h2>
+                <button onclick="closeModal('modal2')"
+                    class="text-2xl cursor-pointer bg-[#000035] text-white rounded-full w-8 h-8 flex items-center justify-center"><i
+                        class="ri-close-line"></i></button>
             </div>
             <img src="assets/images/two.jpeg" class="rounded-xl shadow-lg/30" alt="">
             <p class="py-4">
@@ -697,12 +729,15 @@
         <div class="bg-white h-[80%] overflow-y-scroll p-6 rounded-xl max-w-4xl w-full relative">
 
             <div class="flex justify-between items-center sticky z-20 top-0">
-                <h2 class="text-2xl font-bold mb-3 bg-[#000035] text-white py-2 px-4 rounded-lg">Vinyl Fence</h2>
-                <button onclick="closeModal('modal3')" class="text-2xl cursor-pointer bg-[#000035] text-white rounded-full w-8 h-8 flex items-center justify-center"><i class="ri-close-line"></i></button>
+                <h2 class="text-2xl font-bold mb-3 bg-[#000035] text-white py-2 px-4 rounded-lg">Забор из проф-листа
+                </h2>
+                <button onclick="closeModal('modal3')"
+                    class="text-2xl cursor-pointer bg-[#000035] text-white rounded-full w-8 h-8 flex items-center justify-center"><i
+                        class="ri-close-line"></i></button>
             </div>
             <img src="assets/images/three.jpeg" class="rounded-xl shadow-lg/30" alt="">
             <p class="py-4">
-                Low-maintenance vinyl fences that are weather-resistant, durable, and visually appealing.
+                Low-maintenance Забор из проф-листаs that are weather-resistant, durable, and visually appealing.
             </p>
             <h2 class="text-2xl font-bold mb-3">Prices</h2>
             <div class="w-full overflow-x-auto mt-6">
@@ -800,8 +835,10 @@
         <div class="bg-white h-[80%] overflow-y-scroll p-6 rounded-xl max-w-4xl w-full relative">
 
             <div class="flex justify-between items-center sticky z-20 top-0">
-                <h2 class="text-2xl font-bold mb-3 bg-[#000035] text-white py-2 px-4 rounded-lg">Chain Link Fence</h2>
-                <button onclick="closeModal('modal4')" class="text-2xl cursor-pointer bg-[#000035] text-white rounded-full w-8 h-8 flex items-center justify-center"><i class="ri-close-line"></i></button>
+                <h2 class="text-2xl font-bold mb-3 bg-[#000035] text-white py-2 px-4 rounded-lg">Забор Жалюзи</h2>
+                <button onclick="closeModal('modal4')"
+                    class="text-2xl cursor-pointer bg-[#000035] text-white rounded-full w-8 h-8 flex items-center justify-center"><i
+                        class="ri-close-line"></i></button>
             </div>
             <img src="assets/images/four.jpeg" class="rounded-xl shadow-lg/30" alt="">
             <p class="py-4">
@@ -904,12 +941,16 @@
         <div class="bg-white h-[80%] overflow-y-scroll p-6 rounded-xl max-w-4xl w-full relative">
 
             <div class="flex justify-between items-center sticky z-20 top-0">
-                <h2 class="text-2xl font-bold mb-3 bg-[#000035] text-white py-2 px-4 rounded-lg">Automatic Gate</h2>
-                <button onclick="closeModal('modal5')" class="text-2xl cursor-pointer bg-[#000035] text-white rounded-full w-8 h-8 flex items-center justify-center"><i class="ri-close-line"></i></button>
+                <h2 class="text-2xl font-bold mb-3 bg-[#000035] text-white py-2 px-4 rounded-lg">автоматических откатных
+                    ворот, распашные ворота</h2>
+                <button onclick="closeModal('modal5')"
+                    class="text-2xl cursor-pointer bg-[#000035] text-white rounded-full w-8 h-8 flex items-center justify-center"><i
+                        class="ri-close-line"></i></button>
             </div>
             <img src="assets/images/five.jpeg" class="rounded-xl shadow-lg/30" alt="">
             <p class="py-4">
-                Secure and convenient automatic gates with smooth operation and remote access control.
+                Secure and convenient автоматических откатных ворот, распашные воротаs with smooth operation and remote
+                access control.
             </p>
             <h2 class="text-2xl font-bold mb-3">Prices</h2>
             <div class="w-full overflow-x-auto mt-6">
@@ -1007,8 +1048,11 @@
         <div class="bg-white h-[80%] overflow-y-scroll p-6 rounded-xl max-w-4xl w-full relative">
 
             <div class="flex justify-between items-center sticky z-20 top-0">
-                <h2 class="text-2xl font-bold mb-3 bg-[#000035] text-white py-2 px-4 rounded-lg">Fence Repair</h2>
-                <button onclick="closeModal('modal6')" class="text-2xl cursor-pointer bg-[#000035] text-white rounded-full w-8 h-8 flex items-center justify-center"><i class="ri-close-line"></i></button>
+                <h2 class="text-2xl font-bold mb-3 bg-[#000035] text-white py-2 px-4 rounded-lg">Mонолитные работы,
+                    Кирпичная кладка</h2>
+                <button onclick="closeModal('modal6')"
+                    class="text-2xl cursor-pointer bg-[#000035] text-white rounded-full w-8 h-8 flex items-center justify-center"><i
+                        class="ri-close-line"></i></button>
             </div>
             <img src="assets/images/six.jpeg" class="rounded-xl shadow-lg/30" alt="">
             <p class="py-4">
@@ -1113,9 +1157,10 @@
 
                 <!-- Brand -->
                 <div class="col-span-12 md:col-span-4 lg:col-span-2">
-                    <h2 class="text-2xl font-bold mb-3">FencePro</h2>
+                    <h2 class="text-2xl font-bold mb-3">Забор Строй</h2>
                     <p class="text-sm leading-relaxed mb-6">
-                        Premium fencing solutions designed for durability, security, and modern aesthetics.
+                        Премиальные решения для ограждений, разработанные с учетом долговечности, безопасности и
+                        современной эстетики.
                     </p>
                     <div class="flex gap-3">
                         <a href="#"
@@ -1141,38 +1186,38 @@
 
                     <!-- Quick Links -->
                     <div>
-                        <h3 class="text-lg font-bold uppercase tracking-widest mb-5">Quick Links</h3>
+                        <h3 class="text-md font-bold uppercase tracking-widest mb-5">Быстрые ссылки</h3>
                         <ul class="space-y-3 text-sm">
-                            <li><a href="#home" class="hover:text-yellow-500 transition">Home</a></li>
-                            <li><a href="#about" class="hover:text-yellow-500 transition">About Us</a></li>
-                            <li><a href="#services" class="hover:text-yellow-500 transition">Our Services</a></li>
-                            <li><a href="#gallery" class="hover:text-yellow-500 transition">Projects</a></li>
-                            <li><a href="#contact" class="hover:text-yellow-500 transition">Contact</a></li>
+                            <li><a href="#home" class="hover:text-yellow-500 transition">Главная</a></li>
+                            <li><a href="#about" class="hover:text-yellow-500 transition">О нас</a></li>
+                            <li><a href="#services" class="hover:text-yellow-500 transition">Наши услуги</a></li>
+                            <li><a href="#gallery" class="hover:text-yellow-500 transition">Проекты</a></li>
+                            <li><a href="#contact" class="hover:text-yellow-500 transition">Контакты</a></li>
                         </ul>
                     </div>
 
-                    <!-- Services -->
+                    <!-- Услуги  -->
                     <div>
-                        <h3 class="text-lg font-bold uppercase tracking-widest mb-5">Our Services</h3>
+                        <h3 class="text-md font-bold uppercase tracking-widest mb-5">Наши услуги</h3>
                         <ul class="space-y-3 text-sm">
-                            <li><a onclick="openModal('modal1')" class="hover:text-yellow-500 cursor-pointer">Wooden
-                                    Fence</a></li>
-                            <li><a onclick="openModal('modal2')" class="hover:text-yellow-500 cursor-pointer">Metal
-                                    Fence</a></li>
-                            <li><a onclick="openModal('modal3')" class="hover:text-yellow-500 cursor-pointer">Vinyl
-                                    Fence</a></li>
-                            <li><a onclick="openModal('modal4')" class="hover:text-yellow-500 cursor-pointer">Chain Link
-                                    Fence</a></li>
-                            <li><a onclick="openModal('modal5')" class="hover:text-yellow-500 cursor-pointer">Automatic
-                                    Gate</a></li>
+                            <li><a onclick="openModal('modal1')" class="hover:text-yellow-500 cursor-pointer">Монтаж
+                                    навесов</a></li>
+                            <li><a onclick="openModal('modal2')"
+                                    class="hover:text-yellow-500 cursor-pointer">Металлический Забор</a></li>
+                            <li><a onclick="openModal('modal3')" class="hover:text-yellow-500 cursor-pointer">Виниловый
+                                    Забор</a></li>
+                            <li><a onclick="openModal('modal4')" class="hover:text-yellow-500 cursor-pointer">Забор
+                                    Жалюзи</a></li>
+                            <li><a onclick="openModal('modal5')"
+                                    class="hover:text-yellow-500 cursor-pointer">Автоматические ворота</a></li>
                         </ul>
                     </div>
 
                 </div>
 
-                <!-- Contact -->
+                <!-- Контакты -->
                 <div class="hidden md:block col-span-12 md:col-span-4 lg:col-span-2">
-                    <h3 class="text-lg font-bold uppercase tracking-widest mb-5">Contact Us</h3>
+                    <h3 class="text-md font-bold uppercase tracking-widest mb-5">Контакты Us</h3>
                     <ul class="space-y-4 text-sm">
                         <li class="flex items-start gap-3">
                             <span class="w-8 h-8 rounded-lg flex items-center justify-center shrink-0">
@@ -1208,7 +1253,7 @@
                 </div>
 
                 <div class="col-span-12 md:col-span-6 lg:col-span-4">
-                    <h3 class="text-lg font-bold uppercase tracking-widest mb-5">
+                    <h3 class="text-md font-bold uppercase tracking-widest mb-5">
                         Our Locations
                     </h3>
 
@@ -1281,7 +1326,7 @@
 
                 <div>
                     <h2 class="md:text-3xl font-black tracking-widest uppercase">
-                        Fence Calculator
+                        Fence Калкулятор
                     </h2>
                     <p class="text-xs">Instant fence price estimate</p>
                 </div>
