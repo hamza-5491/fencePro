@@ -506,7 +506,7 @@
                     </div>
                     <div class="mt-4">
                         <input type="checkbox" name="" id="checkboxone" class="pt-2">
-                        <label for="checkboxone" class="text-sm">Нажимая на кнопку, я даю ,<span onclick="openModal()"
+                        <label for="checkboxone" class="text-sm">Нажимая на кнопку, я даю ,<span onclick="openConsentModal()"
                                 class="underline text-[#ff4c00] cursor-pointer">согласие
                                 на обработку персональных данных и ознакомлен с Политикой ОПД</span></label>
                     </div>
@@ -856,7 +856,7 @@
             class="bg-white max-w-3xl w-full rounded-xl p-6 relative shadow-xl overflow-y-auto max-h-[80vh]">
 
             <!-- Close Button -->
-            <button onclick="closeModal()"
+            <button onclick="closeConsentModal()"
                 class="absolute top-3 right-3 text-2xl w-8 h-8 flex items-center justify-center">
                 ✕
             </button>
@@ -1337,20 +1337,21 @@
         const outerCheckbox = document.getElementById("checkboxone");
         const modalCheckbox = document.getElementById("modalCheck");
 
-        function openModal() {
+        function openConsentModal() {
             modal.classList.remove("hidden");
             document.body.style.overflowY = "hidden";
 
         }
 
-        function closeModal() {
+        function closeConsentModal() {
             modal.classList.add("hidden");
+            document.body.style.overflowY = "";
         }
 
         // click outside closes modal
         modal.addEventListener("click", (e) => {
             if (e.target === modal) {
-                closeModal();
+                closeConsentModal();
                 document.body.style.overflowY = "";
 
             }
