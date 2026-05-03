@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЗаборСтрой</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="preload" as="image" href="assets/images/hero.webp">
+    <link rel="preload" as="image" href="assets/images/pricing-bg.webp">
+</head>
+
+<body class="bg-white loading">
+
+    <div id="loader">
+        <div class="loader-content">
+            <h1 class="brand text-black">ЗаборСтрой</h1>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <section class="main w-full md:h-screen relative h-170" id="home">
+        <div class="absolute top-0 bg-black/60 w-full md:h-screen h-170">
+            <div class="flex justify-center items-center h-full flex-col gap-5 px-6">
+
+                <h1 class="font-semibold text-4xl text-white/80">Стройте прочные, надежные и красивые заборы.</h1>
+                <p class="font-semibold text-white/80 md:max-w-2xl md:px-5 text-justify text-lg">Мы подходим
+                    индивидуально к каждому заказчику, учитывая все пожелания и особенности участка. Специализируемся на
+                    строительстве нестандартных заборов и ограждений, которые делают ваш участок уникальным, безопасным
+                    и эстетически завершённым.</p>
+                <a href="#services" class="bg-[#ff4c00] text-black px-6 font-bold py-2 rounded-full">посмотреть
+                    услуги</a>
+            </div>
+        </div>
+        <div
+            class="fixed z-20 bg-[#ff4c00] text-black bottom-5 right-5 flex flex-col text-2xl px-2 py-2 rounded-xl gap-6 shadow-md shadow-white/30">
+            <a href="https://max.ru/"><img src="assets/images/max-messenger-sign-logo.svg" alt="SVG logo Max"
+                    style="max-width:200px;" /></a>
+            <a href="" target="_blank">
+                <i class="ri-phone-line"></i>
+            </a>
+        </div>
+        <!-- NAVBAR -->
+        <nav class="w-full z-50 fixed top-0">
+            <div class="mx-auto flex justify-between items-center px-6 py-4">
+                <a href="#" class="text-xl font-bold bg-[#ff4c00] text-black px-6 py-2 rounded-full">ЗаборСтрой</a>
+
+                <ul
+                    class="hidden md:flex gap-8 font-medium bg-[#ff4c00] text-black backdrop-blur-lg px-6 py-2.5 rounded-full">
+                    <li><a href="#home" class="hover:text-white">Главная</a></li>
+                    <li><a href="#about" class="hover:text-white">О Компаний</a></li>
+                    <li><a href="#services" class="hover:text-white">Услуги </a></li>
+                    <li><a href="#price" class="hover:text-white">Цены</a></li>
+                    <li><a href="#calculator" class="hover:text-white">Калкулятор</a></li>
+                    <li><a href="#contact" class="hover:text-white">Контакты</a></li>
+                </ul>
+
+                <div class="hidden md:flex gap-4 items-center">
+                    <a href="#contact" class="bg-[#ff4c00] text-black font-bold px-5 py-2 rounded-full cursor-pointer">
+                        Оставить Заявку
+                    </a>
+                </div>
+
+                <button id="menuBtn"
+                    class="md:hidden text-2xl relative z-50 bg-[#ff4c00] text-black px-2 py-1 rounded-full">
+                    <i id="menuIcon" class="ri-menu-line"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu"
+            class="fixed top-0 left-0 h-screen w-full z-40 bg-[rgba(255,255,255,0.2)] backdrop-blur-lg transform -translate-x-full transition-transform duration-500 md:hidden">
+
+            <ul class="flex flex-col px-14 my-20 py-6 gap-6 font-medium text-lg">
+
+                <li><a href="#home" class="mobile-link">Главная</a></li>
+                <li><a href="#about" class="mobile-link">О Компаний</a></li>
+                <li><a href="#services" class="mobile-link">Услуги </a></li>
+                <li><a href="#price" class="mobile-link">Цены</a></li>
+                <li><a href="#calculator" class="mobile-link">Калкулятор</a></li>
+                <li><a href="tel:+923001234567">Контакты (Позвонить)</a></li>
+
+                <a href="#contact"
+                    class="bg-[#ff4c00] text-black hover:text-white px-6 py-2 text-center rounded-lg mt-4">
+                    Оставить Заявку
+                </a>
+
+            </ul>
+        </div>
+
+
+    </section>
+
+
+    <!-- services -->
+    <div class="text-center my-10 px-6" id="services">
+        <h2 class="text-5xl font-extrabold text-center tracking-tight text-black relative">
+            Услуги
+            <span class="block w-20 h-1 bg-[#ff4c00] mx-auto mt-4 rounded-full"></span>
+        </h2>
+        <p class="text-lg mt-4">
+            Выберите тип забора, чтобы просмотреть подробные характеристики и преимущества.
+        </p>
+    </div>
+
+    <section class="pt-20 pb-30 px-6">
+
+        <div class="">
+
+            <div class="owl-carousel partner-slider">
+
+                <div class="item rounded-xl overflow-hidden group md:pt-10 pt-0">
+                    <div onclick="openModal('modal1')" class="cursor-pointer relative h-50">
+                        <img src="assets/images/s1.jpg" class="rounded object-cover h-full w-full">
+                        <div
+                            class="bg-black/35 h-full w-full absolute top-0 rounded-xl flex items-end py-4 px-3 text-center">
+                            <h3
+                                class="font-semibold transition w-full duration-300 bg-[#ff4c00] text-black px-3 py-2 rounded-xl">
+                                Монтаж навесов</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item rounded-xl overflow-hidden group">
+                    <div onclick="openModal('modal2')" class="cursor-pointer relative h-50">
+                        <img src="assets/images/s2.jpg" class="rounded object-cover h-full w-full">
+                        <div
+                            class="bg-black/35 h-full w-full absolute top-0 rounded-xl flex items-end py-4 px-3 text-center">
+                            <h3
+                                class="font-semibold transition w-full duration-300 bg-[#ff4c00] text-black px-3 py-2 rounded-xl">
+                                Забор из металлического штакетника</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="item rounded-xl overflow-hidden group md:pt-10 pt-0">
+                    <div onclick="openModal('modal3')" class="cursor-pointer relative h-50">
+                        <img src="assets/images/s3.jpg" class="rounded object-cover h-full w-full">
+                        <div
+                            class="bg-black/35 h-full w-full absolute top-0 rounded-xl flex items-end py-4 px-3 text-center">
+                            <h3
+                                class="font-semibold transition w-full duration-300 bg-[#ff4c00] text-black px-3 py-2 rounded-xl">
+                                Забор из проф-листа</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="item rounded-xl overflow-hidden group">
+                    <div onclick="openModal('modal4')" class="cursor-pointer relative h-50">
+                        <img src="assets/images/s4.jpg" class="rounded object-cover h-full w-full">
+                        <div
+                            class="bg-black/35 h-full w-full absolute top-0 rounded-xl flex items-end py-4 px-3 text-center">
+                            <h3
+                                class="font-semibold transition w-full duration-300 bg-[#ff4c00] text-black px-3 py-2 rounded-xl">
+                                Забор Жалюзи</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="item rounded-xl overflow-hidden group md:pt-10 pt-0">
+                    <div onclick="openModal('modal5')" class="cursor-pointer relative h-50">
+                        <img src="assets/images/s4.2.jpg" class="rounded object-cover h-full w-full">
+                        <div
+                            class="bg-black/35 h-full w-full absolute top-0 rounded-xl flex items-end py-4 px-3 text-center">
+                            <h3
+                                class="font-semibold transition w-full duration-300 bg-[#ff4c00] text-black px-3 py-2 rounded-xl">
+                                автоматических откатных ворот, распашные ворота</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="item rounded-xl overflow-hidden group">
+                    <div onclick="openModal('modal6')" class="cursor-pointer relative h-50">
+                        <img src="assets/images/s5.jpg" class="rounded object-cover h-full w-full">
+                        <div
+                            class="bg-black/35 h-full w-full absolute top-0 rounded-xl flex items-end py-4 px-3 text-center">
+                            <h3
+                                class="font-semibold transition w-full duration-300 bg-[#ff4c00] text-black px-3 py-2 rounded-xl">
+                                Mонолитные работы, Кирпичная кладка</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- about -->
+    <h2 class="md:text-5xl text-4xl font-extrabold text-center mb-14 tracking-tight text-black relative">
+        О Компаний
+        <span class="block w-40 h-1 bg-[#ff4c00] mx-auto mt-4 rounded-full"></span>
+    </h2>
+    <section class="py-10 px-6 relative bg-cover bg-center h-180 md:h-screen" id="about"
+        style="background-image: url('assets/images/aboutusimage.jpg');">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/60"></div>
+
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10 text-white">
+
+            <!-- Left -->
+            <div class="flex flex-col justify-top md:pb-20">
+                <h2 class="text-3xl font-extrabold tracking-tight relative">
+                    Кто мы?
+                    <span class="block w-20 h-1 bg-[#ff4c00] my-2 rounded-full"></span>
+                </h2>
+                <p class="text-md md:text-justify">
+                    Компания «ЗаборСтрой» надёжный подрядчик по изготовлению и монтажу заборов и ограждений. Мы
+                    работаем под управлением ООО «Прогресс-21» и предлагаем полный цикл услуг: от консультации и замера
+                    до установки «под ключ». Используем качественные материалы, соблюдаем технологии и гарантируем
+                    аккуратное выполнение работ в срок.
+                </p>
+            </div>
+
+            <!-- Empty Center (keeps layout SAME) -->
+            <div class=""></div>
+
+            <!-- Right -->
+            <div class="flex flex-col md:justify-end h-screen md:pb-30 space-y-6">
+                <div>
+                    <h2 class="text-3xl font-extrabold tracking-tight relative">
+                        Наша миссия
+                        <span class="block w-20 h-1 bg-[#ff4c00] my-2 rounded-full"></span>
+                    </h2>
+                    <p class="text-md md:text-justify">
+                        Создавать прочные, эстетичные и долговечные ограждения, которые обеспечивают безопасность и
+                        комфорт наших клиентов. Мы стремимся предлагать оптимальные решения по соотношению цены и
+                        качества, обеспечивать высокий уровень сервиса и выстраивать долгосрочные отношения с каждым
+                        заказчиком
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- pricing -->
+    <section class="my-10 px-0 mx-0 relative text-black" id="price">
+
+        <div class="md:max-w-2xl md:mx-auto text-center">
+
+
+            <h2 class="text-5xl font-extrabold text-center tracking-tight text-black relative">
+                Цены
+                <span class="block w-20 h-1 bg-[#ff4c00] mx-auto mt-4 rounded-full"></span>
+            </h2>
+            <p class="text-lg mt-4 my-8">
+                Актуальные цены на заборы и ограждения уточняйте у наших специалистов. Мы всегда подберём
+                оптимальное решение под ваш бюджет и задачи.
+            </p>
+            <a href="#services" class="bg-[#ff4c00] text-black px-6 font-bold py-2 rounded-full">позвонить</a>
+
+        </div>
+
+
+
+
+    </section>
+
+    <!-- gallery -->
+    <section class="py-12 bg-white" id="gallery">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <h2 class="md:text-5xl text-4xl font-extrabold text-center mb-14 tracking-tight text-black relative">
+                Галерея проектов
+                <span class="block w-40 h-1 bg-[#ff4c00] mx-auto mt-4 rounded-full"></span>
+            </h2>
+            <!-- GRID -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+
+                <!-- ITEM -->
+                <div class="overflow-hidden rounded-xl shadow-lg group relative">
+
+                    <img src="assets/images/one.jpeg"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
+
+                    <!-- Gradient overlay -->
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black to-white/10 opacity-0 group-hover:opacity-100 transition duration-300">
+                    </div>
+
+                    <!-- Text content -->
+                    <div
+                        class="absolute bottom-0 p-4 text-white opacity-0 group-hover:opacity-100 transition duration-300">
+                        <h3 class="text-lg font-semibold">Забор из штакетника с монтажом в шахматном порядке</h3>
+                        <p class="text-sm text-gray-200"> обеспечивает приватность, при этом сохраняет лёгкость и
+                            современный внешний вид.</p>
+                    </div>
+
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-lg group relative">
+
+                    <img src="assets\images\g5.jpeg"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
+
+                    <!-- Gradient overlay -->
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black to-white/10 opacity-0 group-hover:opacity-100 transition duration-300">
+                    </div>
+
+                    <!-- Text content -->
+                    <div
+                        class="absolute bottom-0 p-4 text-white opacity-0 group-hover:opacity-100 transition duration-300">
+                        <h3 class="text-lg font-semibold">Забор на железобетонной ленте с бетонными столбами и
+                            заполнением профлистом</h3>
+                        <p class="text-sm text-gray-200">прочная и надёжная конструкция для долговечной эксплуатации</p>
+                    </div>
+
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-lg group relative">
+
+                    <img src="assets/images/g7.jpeg"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
+
+                    <!-- Gradient overlay -->
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black to-white/10 opacity-0 group-hover:opacity-100 transition duration-300">
+                    </div>
+
+                    <!-- Text content -->
+                    <div
+                        class="absolute bottom-0 p-4 text-white opacity-0 group-hover:opacity-100 transition duration-300">
+                        <h3 class="text-lg font-semibold">Забор на железобетонной ленте с кирпичными столбами и
+                            двусторонним профлистом с принтом под дерево</h3>
+                        <p class="text-sm text-gray-200">сочетание прочности и эстетики натуральных материалов</p>
+                    </div>
+
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-lg group relative">
+
+                    <img src="assets/images/g8.jpeg"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
+
+                    <!-- Gradient overlay -->
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black to-white/10 opacity-0 group-hover:opacity-100 transition duration-300">
+                    </div>
+
+                    <!-- Text content -->
+                    <div
+                        class="absolute bottom-0 p-4 text-white opacity-0 group-hover:opacity-100 transition duration-300">
+                        <h3 class="text-lg font-semibold">Монтаж навеса</h3>
+                        <p class="text-sm text-gray-200">практичное решение для защиты автомобиля или зоны отдыха от
+                            солнца и осадков.</p>
+                    </div>
+
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-lg group relative">
+
+                    <img src="assets/images/g9.jpeg"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
+
+                    <!-- Gradient overlay -->
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black to-white/10 opacity-0 group-hover:opacity-100 transition duration-300">
+                    </div>
+
+                    <!-- Text content -->
+                    <div
+                        class="absolute bottom-0 p-4 text-white opacity-0 group-hover:opacity-100 transition duration-300">
+                        <h3 class="text-lg font-semibold">Забор на железобетонной ленте с кирпичными столбами,
+                            заполнение жалюзи, откатные ворота </h3>
+                        <p class="text-sm text-gray-200">Забор на железобетонной ленте с кирпичными столбами, заполнение
+                            жалюзи, откатные ворота </p>
+                    </div>
+
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-lg group relative">
+
+                    <img src="assets/images/g10.jpeg"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
+
+                    <!-- Gradient overlay -->
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black to-white/10 opacity-0 group-hover:opacity-100 transition duration-300">
+                    </div>
+
+                    <!-- Text content -->
+                    <div
+                        class="absolute bottom-0 p-4 text-white opacity-0 group-hover:opacity-100 transition duration-300">
+                        <h3 class="text-lg font-semibold">Забор высотой 3 метра из жалюзи с дополнительной зашивкой
+                            профлистом </h3>
+                        <p class="text-sm text-gray-200">максимальная приватность и защита участка</p>
+                    </div>
+
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-lg group relative">
+
+                    <img src="assets/images/g4.jpeg"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
+
+                    <!-- Gradient overlay -->
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black to-white/10 opacity-0 group-hover:opacity-100 transition duration-300">
+                    </div>
+
+                    <!-- Text content -->
+                    <div
+                        class="absolute bottom-0 p-4 text-white opacity-0 group-hover:opacity-100 transition duration-300">
+                        <h3 class="text-lg font-semibold">Забор на железобетонной ленте с кирпичными столбами и
+                            заполнением жалюзи</h3>
+                        <p class="text-sm text-gray-200">надёжное и эстетичное решение.</p>
+                    </div>
+
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-lg group relative">
+
+                    <img src="assets/images/g11.jpeg"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
+
+                    <!-- Gradient overlay -->
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black to-white/10 opacity-0 group-hover:opacity-100 transition duration-300">
+                    </div>
+
+                    <!-- Text content -->
+                    <div
+                        class="absolute bottom-0 p-4 text-white opacity-0 group-hover:opacity-100 transition duration-300">
+                        <h3 class="text-lg font-semibold">Забор из жалюзи на железобетонной ленте с принтом под дерево
+                        </h3>
+                        <p class="text-sm text-gray-200">современный дизайн с имитацией натуральной текстуры</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+    </section>
+
+
+
+
+
+
+    <!-- contact us -->
+
+
+    <div id="contact" class="px-6 md:px-24 grid grid-cols-1 lg:grid-cols-2 pt-10 py-20 gap-20 items-center"
+        id="contact">
+        <div>
+            <div class="">
+                <form action="">
+                    <div class="mt-4">
+                        <input type="text" name="" id="name" class="border py-2 px-4 rounded-md w-[100%]"
+                            placeholder=" Ваше имя*">
+                    </div>
+                    <div class="mt-4">
+                        <input type="email" name="" id="email" class="border py-2 px-4 rounded-md w-[100%]"
+                            placeholder="Ваш телефон*">
+                    </div>
+                    <div class="mt-4">
+                        <input type="text" name="" id="loc" class="border py-2 px-4 rounded-md w-[100%]"
+                            placeholder="Ваше местоположение">
+                    </div>
+                    <div class="mt-4">
+                        <input type="checkbox" name="" id="checkboxone" class="pt-2">
+                        <label for="checkboxone" class="text-sm">Нажимая на кнопку, я даю ,<a
+                                href="user-aggrement.html" class="underline text-[#ff4c00]">согласие
+                                на обработку персональных данных и ознакомлен с Политикой ОПД</a></label>
+                    </div>
+                    <div class="mt-4">
+                        <input type="checkbox" name="" id="checkboxtwo" class="pt-2">
+                        <label for="checkboxtwo" class="text-sm">Нажимая на кнопку, я даю согласие на получение
+                            информационных рассылок.</label>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-10 md:items-center mt-4">
+                        <button id="button" type="submit"
+                            class="bg-[#ff4c00] text-black px-5 py-2 rounded-sm cursor-pointer">СВЯЖИТЕСЬ
+                            С
+                            НАМИ</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <div>
+            <h2 class="md:text-5xl text-3xl font-extrabold text-center tracking-tight text-black relative">
+                Давайте Поговорим
+                <span class="block w-40 h-1 bg-[#ff4c00] mx-auto mt-4 rounded-full"></span>
+            </h2>
+            <p class="my-5">Оставьте заявку, и мы поможем подобрать забор под ваши задачи и бюджет. Выполняем
+                изготовление и профессиональный монтаж заборов любой сложности. Наш специалист свяжется с вами,
+                проконсультирует, рассчитает стоимость и сроки. Консультация бесплатно</p>
+
+        </div>
+    </div>
+
+
+    <div>
+        <iframe src="https://yandex.com/map-widget/v1/?ll=76.87868,8.55814&z=16" width="100%" height="450"
+            frameborder="0" allowfullscreen="true">
+        </iframe>
+    </div>
+
+    <!-- MODALS -->
+    <div id="modal1"
+        class="modal hidden z-20 fixed inset-0 bg-black/50 backdrop-blur flex items-center justify-center p-6">
+
+        <div class="bg-white h-[80%] overflow-y-scroll p-6 rounded-xl max-w-4xl w-full relative">
+
+            <div
+                class="flex justify-between items-center sticky z-20 top-0 bg-[#ff4c00] text-black rounded-lg mb-3 pr-2">
+                <h2 class="md:text-2xl text-sm font-bold mb-3 py-2 px-4 rounded-lg">Монтаж
+                    навесов</h2>
+                <button onclick="closeModal('modal1')"
+                    class="text-2xl cursor-pointer rounded-full w-8 h-8 flex items-center justify-center"><i
+                        class="ri-close-line"></i></button>
+            </div>
+
+            <img src="assets/images/s1.jpg" class="rounded-xl shadow-lg/30" alt="">
+            <p class="py-4">
+                надёжные конструкции для защиты автомобиля и зон отдыха от солнца и осадков.
+            </p>
+            <h2 class="text-2xl font-bold mb-3">Prices</h2>
+            <div class="w-full overflow-x-auto mt-6 flex justify-center">
+                <!-- REMOVE TABLE and ADD BUTTON -->
+
+                <a href="#contact" onclick="closeModal('modal1')"
+                    class="inline-block bg-[#ff4c00] text-black font-bold px-6 py-3 rounded-full mt-4 hover:text-white transition">
+                    Узнать цену / Связаться
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div id="modal2"
+        class="modal hidden z-20 fixed inset-0 bg-black/50 backdrop-blur flex items-center justify-center p-6">
+
+        <div class="bg-white h-[80%] overflow-y-scroll p-6 rounded-xl max-w-4xl w-full relative">
+
+            <div
+                class="flex justify-between items-center sticky z-20 top-0 bg-[#ff4c00] text-black rounded-lg mb-3 pr-2">
+                <h2 class="md:text-2xl text-sm font-bold mb-3 py-2 px-4 rounded-lg">Забор из
+                    металлического
+                    штакетника</h2>
+                <button onclick="closeModal('modal2')"
+                    class="text-2xl cursor-pointer rounded-full w-8 h-8 flex items-center justify-center"><i
+                        class="ri-close-line"></i></button>
+            </div>
+            <img src="assets/images/s2.jpg" class="rounded-xl shadow-lg/30" alt="">
+            <p class="py-4">
+                современное решение с аккуратным внешним видом и возможностью регулировать уровень приватности.
+            </p>
+            <h2 class="text-2xl font-bold mb-3">Prices</h2>
+            <div class="w-full overflow-x-auto mt-6 flex justify-center">
+                <!-- REMOVE TABLE and ADD BUTTON -->
+
+                <a href="#contact" onclick="closeModal('modal2')"
+                    class="inline-block bg-[#ff4c00] text-black font-bold px-6 py-3 rounded-full mt-4 hover:text-white transition">
+                    Узнать цену / Связаться
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div id="modal3"
+        class="modal hidden z-20 fixed inset-0 bg-black/50 backdrop-blur flex items-center justify-center p-6">
+
+        <div class="bg-white h-[80%] overflow-y-scroll p-6 rounded-xl max-w-4xl w-full relative">
+
+            <div
+                class="flex justify-between items-center sticky z-20 top-0 bg-[#ff4c00] text-black rounded-lg mb-3 pr-2">
+                <h2 class="md:text-2xl text-sm font-bold mb-3 py-2 px-4 rounded-lg">Забор из
+                    проф-листа
+                </h2>
+                <button onclick="closeModal('modal3')"
+                    class="text-2xl cursor-pointer rounded-full w-8 h-8 flex items-center justify-center"><i
+                        class="ri-close-line"></i></button>
+            </div>
+            <img src="assets/images/s3.jpg" class="rounded-xl shadow-lg/30" alt="">
+            <p class="py-4">
+                практичные и долговечные ограждения с хорошей защитой участка.
+            </p>
+            <h2 class="text-2xl font-bold mb-3">Prices</h2>
+            <div class="w-full overflow-x-auto mt-6 flex justify-center">
+                <!-- REMOVE TABLE and ADD BUTTON -->
+
+                <a href="#contact" onclick="closeModal('modal3')"
+                    class="inline-block bg-[#ff4c00] text-black font-bold px-6 py-3 rounded-full mt-4 hover:text-white transition">
+                    Узнать цену / Связаться
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div id="modal4"
+        class="modal hidden z-20 fixed inset-0 bg-black/50 backdrop-blur flex items-center justify-center p-6">
+
+        <div class="bg-white h-[80%] overflow-y-scroll p-6 rounded-xl max-w-4xl w-full relative">
+
+            <div
+                class="flex justify-between items-center sticky z-20 top-0 bg-[#ff4c00] text-black rounded-lg mb-3 pr-2">
+                <h2 class="md:text-2xl text-sm font-bold mb-3 py-2 px-4 rounded-lg">Забор Жалюзи
+                </h2>
+                <button onclick="closeModal('modal4')"
+                    class="text-2xl cursor-pointer rounded-full w-8 h-8 flex items-center justify-center"><i
+                        class="ri-close-line"></i></button>
+            </div>
+            <img src="assets/images/s4.jpg" class="rounded-xl shadow-lg/30" alt="">
+            <p class="py-4">
+                стильные конструкции с вентиляцией и защитой от посторонних взглядов
+            </p>
+            <h2 class="text-2xl font-bold mb-3">Prices</h2>
+            <div class="w-full overflow-x-auto mt-6 flex justify-center">
+                <!-- REMOVE TABLE and ADD BUTTON -->
+
+                <a href="#contact" onclick="closeModal('modal4')"
+                    class="inline-block bg-[#ff4c00] text-black font-bold px-6 py-3 rounded-full mt-4 hover:text-white transition">
+                    Узнать цену / Связаться
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div id="modal5"
+        class="modal hidden z-20 fixed inset-0 bg-black/50 backdrop-blur flex items-center justify-center p-6">
+
+        <div class="bg-white h-[80%] overflow-y-scroll p-6 rounded-xl max-w-4xl w-full relative">
+
+            <div
+                class="flex justify-between items-center sticky z-20 top-0 bg-[#ff4c00] text-black rounded-lg mb-3 pr-2">
+                <h2 class="md:text-2xl text-sm font-bold mb-3 py-2 px-4 rounded-lg">
+                    автоматических откатных
+                    ворот, распашные ворота</h2>
+                <button onclick="closeModal('modal5')"
+                    class="text-2xl cursor-pointer rounded-full w-8 h-8 flex items-center justify-center"><i
+                        class="ri-close-line"></i></button>
+            </div>
+            <img src="assets/images/s4.2.jpg" class="rounded-xl shadow-lg/30" alt="">
+            <p class="py-4">
+                удобство эксплуатации, безопасность и современный функционал.
+            </p>
+            <h2 class="text-2xl font-bold mb-3">Prices</h2>
+            <div class="w-full overflow-x-auto mt-6 flex justify-center">
+                <!-- REMOVE TABLE and ADD BUTTON -->
+
+                <a href="#contact" onclick="closeModal('modal5')"
+                    class="inline-block bg-[#ff4c00] text-black font-bold px-6 py-3 rounded-full mt-4 hover:text-white transition">
+                    Узнать цену / Связаться
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div id="modal6"
+        class="modal hidden z-20 fixed inset-0 bg-black/50 backdrop-blur flex items-center justify-center p-6">
+
+        <div class="bg-white h-[80%] overflow-y-scroll p-6 rounded-xl max-w-4xl w-full relative">
+
+            <div
+                class="flex justify-between items-center sticky z-20 top-0 bg-[#ff4c00] text-black rounded-lg mb-3 pr-2">
+                <h2 class="md:text-2xl text-sm font-bold mb-3 py-2 px-4 rounded-lg">Mонолитные
+                    работы,
+                    Кирпичная кладка</h2>
+                <button onclick="closeModal('modal6')"
+                    class="text-2xl cursor-pointer rounded-full w-8 h-8 flex items-center justify-center"><i
+                        class="ri-close-line"></i></button>
+            </div>
+            <img src="assets/images/s5.jpg" class="rounded-xl shadow-lg/30" alt="">
+            <p class="py-4">
+                качественное выполнение столбов и других элементов с аккуратной геометрией и долговечностью,
+                прочная основа для любых конструкций с соблюдением всех строительных стандартов.
+            </p>
+            <h2 class="text-2xl font-bold mb-3">Prices</h2>
+            <div class="w-full overflow-x-auto mt-6 flex justify-center">
+                <!-- REMOVE TABLE and ADD BUTTON -->
+
+                <a href="#contact" onclick="closeModal('modal6')"
+                    class="inline-block bg-[#ff4c00] text-black font-bold px-6 py-3 rounded-full mt-4 hover:text-white transition">
+                    Узнать цену / Связаться
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="relative pt-16 pb-8 overflow-hidden bg-[#ff4c00] text-black">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 overflow-x-hidden">
+
+            <!-- Top Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 mb-12 items-start">
+
+                <!-- Big Column -->
+                <div class="lg:col-span-6 w-full flex flex-col gap-4">
+                    <h2 class="text-2xl font-bold">ЗаборСтрой</h2>
+
+                    <p class="text-sm leading-relaxed font-semibold text-justify break-words">
+                        Данный интернет сайт носит исключительно информационный характер и не является публичной
+                        офертой, в контексте положений ч.2 ст. 437 ГК РФ.
+                        Для получения подробной информации о стоимости и сроках выполнения просьба обращаться к
+                        сотрудникам ООО «ПРОГРЕСС 21».
+                        Чтобы сделать наш сайт удобнее и персонализированее для вас мы используем cookies и
+                        аналитические инструменты. Продолжая навигацию по сайту, Вы даёте согласие на обработку
+                        персональных данных и соглашаетесь с политикой обработки Сookie-файлов, с политикой
+                        конфиденциальности. В любой момент Вы можете отозвать согласия, запретить сохранение
+                        Cookie в настройках своего браузера.
+                    </p>
+
+                    <div class="flex gap-4 flex-wrap mt-2">
+                        <a class="w-8" href="https://web.telegram.org/">
+                            <img src="assets/images/telegram-logo.svg" alt="">
+                        </a>
+                        <a class="w-8" href="https://max.ru/">
+                            <img src="assets/images/max-messenger-sign-logo.svg" alt="">
+                        </a>
+                        <a class="w-8" href="https://vk.com/?lang=en">
+                            <img src="assets/images/vk-logo.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Small Column 1 -->
+                <div class="lg:col-span-2 w-full flex flex-col gap-4">
+                    <h3 class="text-md font-bold uppercase tracking-widest pt-3">Наши услуги</h3>
+
+                    <ul class="space-y-3 text-sm font-semibold">
+                        <li><a onclick="openModal('modal1')" class="hover:text-white cursor-pointer">Монтаж навесов</a>
+                        </li>
+                        <li><a onclick="openModal('modal2')" class="hover:text-white cursor-pointer">Металлический
+                                Забор</a></li>
+                        <li><a onclick="openModal('modal3')" class="hover:text-white cursor-pointer">Виниловый Забор</a>
+                        </li>
+                        <li><a onclick="openModal('modal4')" class="hover:text-white cursor-pointer">Забор Жалюзи</a>
+                        </li>
+                        <li><a onclick="openModal('modal5')" class="hover:text-white cursor-pointer">Автоматические
+                                ворота</a></li>
+                    </ul>
+                </div>
+
+                <!-- Small Column 2 -->
+                <div class="lg:col-span-4 w-full flex flex-col gap-4 font-semibold">
+                    <h3 class="text-md font-bold uppercase tracking-widest pt-3">Контакты</h3>
+
+                    <ul class="space-y-4 text-sm">
+
+                        <li class="flex items-start gap-3">
+                            <span class="w-8 h-8 flex items-center justify-center shrink-0">
+                                <i class="ri-map-pin-line text-black"></i>
+                            </span>
+                            <div>
+                                <p class="font-medium">адрес</p>
+                                <p class="mt-0.5 break-words">
+                                    шоссе Ленинградское, д. 46, кв./оф. 9/1Л, г. Москва
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="flex items-start gap-3">
+                            <span class="w-8 h-8 flex items-center justify-center shrink-0">
+                                <i class="ri-phone-line text-black"></i>
+                            </span>
+                            <div>
+                                <p class="font-medium">Телефон</p>
+                                <a href="tel:+923001234567"
+                                    class="mt-0.5 block hover:text-white transition break-words">
+                                    89858133505
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="flex items-start gap-3">
+                            <span class="w-8 h-8 flex items-center justify-center shrink-0">
+                                <i class="ri-mail-line text-black"></i>
+                            </span>
+                            <div>
+                                <p class="font-medium">электронная почта</p>
+                                <a href="mailto:vilorilich1976@gmail.com"
+                                    class="mt-0.5 block hover:text-white transition break-words">
+                                    vilorilich1976@gmail.com
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Bottom -->
+            <div class="border-t border-black/30 pt-6 text-center text-xs">
+                <p>© 2026 «ПРОГРЕСС 21» изготовление и установка заборов под ключ</p>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+    <!-- CALCULATOR MODAL -->
+    <!-- <div id="calcModal"
+        class="hidden fixed inset-0 bg-black/60 backdrop-blur-sm z-[999] flex items-center justify-center p-4">
+
+        <div class="bg-white rounded-2xl w-full max-w-lg shadow-2xl h-[460px] overflow-y-scroll">
+
+          
+
+            <div class="px-6 py-3 flex justify-between items-center">
+
+                <div>
+                    <h2 class="md:text-3xl font-black tracking-widest uppercase">
+                        Fence Калкулятор
+                    </h2>
+                    <p class="text-xs">Instant fence price estimate</p>
+                </div>
+
+                <button id="closeCalc"
+                    class="bg-zinc-800 hover:bg-red-500 text-white w-8 h-8 rounded-full flex items-center justify-center">
+                    ✕
+                </button>
+
+            </div>
+
+       
+
+            <div class="px-6">
+
+              
+
+                <p class="text-xs font-semibold uppercase tracking-widest mb-1">
+                    1 · Select Fence Type
+                </p>
+
+                <div class="grid grid-cols-4 gap-3 mb-3">
+
+                    <div class="fence-card border-2 border-gray-200 rounded-xl p-3 cursor-pointer" data-rate="12"
+                        data-name="Wood Panel">
+
+                        <div class="text-xl">🪵</div>
+                        <p class="font-semibold text-sm">Wood Panel</p>
+                        <p class="text-xs text-gray-400">$12 / sq ft</p>
+
+                        <span class="check hidden absolute"></span>
+
+                    </div>
+
+                    <div class="fence-card border-2 border-gray-200 rounded-xl p-3 cursor-pointer" data-rate="18"
+                        data-name="Vinyl">
+
+                        <div class="text-xl">🏠</div>
+                        <p class="font-semibold text-sm">Vinyl</p>
+                        <p class="text-xs text-gray-400">$18 / sq ft</p>
+
+                    </div>
+
+                    <div class="fence-card border-2 border-gray-200 rounded-xl p-3 cursor-pointer" data-rate="8"
+                        data-name="Chain Link">
+
+                        <div class="text-xl">⛓️</div>
+                        <p class="font-semibold text-sm">Chain Link</p>
+                        <p class="text-xs text-gray-400">$8 / sq ft</p>
+
+                    </div>
+
+                    <div class="fence-card border-2 border-gray-200 rounded-xl p-3 cursor-pointer" data-rate="28"
+                        data-name="Wrought Iron">
+
+                        <div class="text-xl">⚙️</div>
+                        <p class="font-semibold text-sm">Wrought Iron</p>
+                        <p class="text-xs text-gray-400">$28 / sq ft</p>
+
+                    </div>
+
+                </div>
+
+
+      
+
+                <p class="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">
+                    2 · Enter Dimensions
+                </p>
+
+                <div class="grid grid-cols-3 gap-3 mb-3">
+
+                    <input id="fenceLength" type="number" placeholder="Length"
+                        class="border-2 border-gray-200 rounded-lg px-3 py-2 text-sm">
+
+                    <input id="fenceHeight" type="number" placeholder="Height"
+                        class="border-2 border-gray-200 rounded-lg px-3 py-2 text-sm">
+
+                    <input id="fenceWidth" type="number" placeholder="Panel width"
+                        class="border-2 border-gray-200 rounded-lg px-3 py-2 text-sm">
+
+                </div>
+
+                <p id="calcError" class="hidden text-red-500 text-xs mb-3">
+                    Please select fence type and enter dimensions
+                </p>
+
+                <button id="calcSubmit"
+                    class="w-full bg-[#ff4c00] text-black cursor-pointer text-white py-3 mb-4 rounded-xl">
+                    Calculate Price
+                </button>
+
+
+            
+
+                <div id="calcResult" class="hidden my-5 rounded-xl p-5">
+
+                    <div class="flex justify-between text-sm mb-3">
+
+                        <span id="rType"></span>
+                        <span id="rArea"></span>
+
+                    </div>
+
+                    <div class="flex justify-between text-sm mb-3">
+
+                        <span id="rRate"></span>
+
+                    </div>
+
+                    <div class="text-right">
+
+                        <p class="text-yellow-400 text-3xl font-bold" id="rTotal">
+                            $0
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div> -->
+
+
+    <script>
+
+
+        const menuBtn = document.getElementById("menuBtn");
+        const mobileMenu = document.getElementById("mobileMenu");
+        const menuIcon = document.getElementById("menuIcon");
+        const mobileLinks = document.querySelectorAll(".mobile-link");
+
+        const calcModal = document.getElementById("calcModal");
+        const closeCalc = document.getElementById("closeCalc");
+
+
+        menuBtn.addEventListener("click", () => {
+
+            mobileMenu.classList.toggle("-translate-x-full");
+
+            document.body.classList.toggle("overflow-hidden");
+
+            if (menuIcon.classList.contains("ri-menu-line")) {
+                menuIcon.classList.remove("ri-menu-line");
+                menuIcon.classList.add("ri-close-line");
+            } else {
+                menuIcon.classList.remove("ri-close-line");
+                menuIcon.classList.add("ri-menu-line");
+            }
+
+        });
+
+
+
+        mobileLinks.forEach(link => {
+
+            link.addEventListener("click", function (e) {
+
+                const target = this.getAttribute("href");
+
+                /* if calculator clicked */
+                if (target === "#calculator") {
+
+                    e.preventDefault();
+
+                    mobileMenu.classList.add("-translate-x-full");
+                    document.body.classList.remove("overflow-hidden");
+
+                    menuIcon.classList.remove("ri-close-line");
+                    menuIcon.classList.add("ri-menu-line");
+
+                    calcModal.classList.remove("hidden");
+
+                    document.body.classList.add("overflow-hidden");
+
+                } else {
+
+                    mobileMenu.classList.add("-translate-x-full");
+                    document.body.classList.remove("overflow-hidden");
+
+                    menuIcon.classList.remove("ri-close-line");
+                    menuIcon.classList.add("ri-menu-line");
+
+                }
+
+            });
+
+        });
+
+
+        // document.querySelectorAll('a[href="#calculator"]').forEach(link => {
+
+        //     link.addEventListener("click", function (e) {
+
+        //         if (!this.classList.contains("mobile-link")) {
+
+        //             e.preventDefault();
+
+        //             calcModal.classList.remove("hidden");
+
+        //             document.body.classList.add("overflow-hidden");
+
+        //         }
+
+        //     });
+
+        // });
+
+
+        // closeCalc.addEventListener("click", () => {
+
+        //     calcModal.classList.add("hidden");
+
+        //     document.body.classList.remove("overflow-hidden");
+
+        // });
+
+
+        // /* close if clicking outside */
+
+        // calcModal.addEventListener("click", (e) => {
+
+        //     if (e.target === calcModal) {
+
+        //         calcModal.classList.add("hidden");
+
+        //         document.body.classList.remove("overflow-hidden");
+
+        //     }
+
+        // });
+
+        // document.addEventListener("DOMContentLoaded", function () {
+
+        //     const fenceCards = document.querySelectorAll(".fence-card");
+        //     const calcSubmit = document.getElementById("calcSubmit");
+        //     const errorMsg = document.getElementById("calcError");
+        //     const resultBox = document.getElementById("calcResult");
+
+        //     let selectedRate = null;
+        //     let selectedName = null;
+
+        //     /* Fence selection */
+
+        //     fenceCards.forEach(card => {
+
+        //         card.addEventListener("click", () => {
+
+        //             fenceCards.forEach(c => {
+        //                 c.classList.remove("border-yellow-400", "bg-yellow-50");
+        //             });
+
+        //             card.classList.add("border-yellow-400", "bg-yellow-50");
+
+        //             selectedRate = parseFloat(card.dataset.rate);
+        //             selectedName = card.dataset.name;
+
+        //         });
+
+        //     });
+
+
+        //     /* Calculate */
+
+        //     calcSubmit.addEventListener("click", () => {
+
+        //         const length = parseFloat(document.getElementById("fenceLength").value);
+        //         const height = parseFloat(document.getElementById("fenceHeight").value);
+        //         const width = parseFloat(document.getElementById("fenceWidth").value);
+
+        //         if (!selectedRate || !length || !height || !width) {
+
+        //             errorMsg.classList.remove("hidden");
+        //             resultBox.classList.add("hidden");
+
+        //             return;
+
+        //         }
+
+        //         errorMsg.classList.add("hidden");
+
+        //         const panelCount = Math.ceil(length / width);
+        //         const area = panelCount * width * height;
+        //         const total = area * selectedRate;
+
+        //         /* Show result */
+
+        //         document.getElementById("rType").textContent = selectedName;
+        //         document.getElementById("rArea").textContent = area + " sq ft";
+        //         document.getElementById("rRate").textContent = "$" + selectedRate + "/sq ft";
+        //         document.getElementById("rTotal").textContent = "$" + total.toLocaleString();
+
+        //         resultBox.classList.remove("hidden");
+
+        //     });
+
+        // });
+
+
+        function openModal(id) {
+            document.getElementById(id).classList.remove("hidden")
+            document.body.style.overflowY = "hidden";
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).classList.add("hidden")
+            document.body.style.overflowY = "";
+        }
+        const modals = document.querySelectorAll(".modal");
+
+        modals.forEach(modal => {
+            modal.addEventListener("click", (e) => {
+                if (e.target === modal) {
+                    modal.classList.add("hidden");
+                    document.body.style.overflowY = "";
+                }
+            });
+        });
+
+
+        $(document).ready(function () {
+
+            $('.partner-slider').owlCarousel({
+                loop: true,
+                margin: 30, // adjust spacing here
+                nav: true,
+                dots: true,
+                navText: [
+                    `<span class="nav-btn prev">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2"/>
+                </svg>
+            </span>`,
+                    `<span class="nav-btn next">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M9 6L15 12L9 18" stroke="white" stroke-width="2"/>
+                </svg>
+            </span>`
+                ],
+                responsive: {
+                    0: {
+                        items: 1,
+                        margin: 15
+                    },
+                    600: {
+                        items: 2,
+                        margin: 20
+                    },
+                    1000: {
+                        items: 3,
+                        margin: 30
+                    }
+                }
+            });
+
+        });
+
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
