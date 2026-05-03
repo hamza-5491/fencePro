@@ -127,3 +127,14 @@ body.loading {
   height: 18px;
 }
 
+@media (max-width: 768px) {
+
+    /* show overlay when active */
+    .card.active .overlay {
+        opacity: 1 !important;
+    }
+
+    .card.active .info {
+        opacity: 1 !important;
+    }
+}
