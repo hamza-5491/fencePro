@@ -3,7 +3,7 @@ html {
 }
 
 .main {
-  background: url("../images/mainimg.jpg") no-repeat center center/cover;
+  background: url("../images/mainimage.png") no-repeat center center/cover;
 }
 
 body.loading {
